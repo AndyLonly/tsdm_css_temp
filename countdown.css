@@ -22,11 +22,9 @@ body {
 }
 
 .event-end-time {
-    background-color: #7289da; /* Discord Blue */
     color: white;
 }
 
 .time-left {
-    background-color: #2c2f33; /* Discord Dark */
     color: white;
 }
