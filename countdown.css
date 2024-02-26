@@ -1,9 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+     font-family: 'Helvetica Neue', Times New Roman, Helvetica, Arial, sans-serif;
 }
 
 .countdown-container {
