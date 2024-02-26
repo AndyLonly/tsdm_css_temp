@@ -1,6 +1,6 @@
 function updateCountdown() {
-    const startTime = new Date('2024-02-26T00:00:00 GMT+0800');
-    const endTime = new Date('2024-03-01T00:00:00 GMT+0800');
+    const startTime = new Date('2024-02-26T00:00:00+0800');
+    const endTime = new Date('2024-03-01T00:00:00+08:00');
     const currentTime = new Date();
     const timeDifference = endTime - currentTime;
 
