@@ -21,3 +21,9 @@
     background: rgba(255, 177, 8, 0.3); 
     backdrop-filter: blur(8px);
 }
+
+/* 苹果多少是有点大病 */
+@supports not (backdrop-filter) {
+.R70Mto_container {
+    -webkit-backdrop-filter: blur(8px);
+}
