@@ -1,22 +1,32 @@
 function updateCountdown() {
-    const startTime = new Date('2024-02-26T00:00:00+0800');
-    const endTime = new Date('2024-03-01T00:00:00+08:00');
+    const startTime = new Date('2024-03-1T00:00:00+0800');
+    const endTime = new Date('2024-03-14T00:00:00+08:00');
     const currentTime = new Date();
-    const timeDifference = endTime - currentTime;
+    let timeDifference;
+    let timeLeftMessage;
 
+    document.getElementById('startTime').innerText = `活动开始时间: ${startTime.toLocaleString()}`;
+    document.getElementById('endTime').innerText = `活动结束时间: ${endTime.toLocaleString()}`;
+
+    if (currentTime < startTime) {
+        // 活动尚未开始
+        timeDifference = startTime - currentTime;
+        timeLeftMessage = '距离活动开始还有: ';
+    } else if (currentTime >= startTime && currentTime <= endTime) {
+        // 活动进行中
+        timeDifference = endTime - currentTime;
+        timeLeftMessage = '距离活动结束还有: ';
+    } else {
+        // 活动已结束
+        clearInterval(interval);
+        document.getElementById('timeLeft').innerText = '活动已结束';
+        return;
+    }
     const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
     const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
-
-    document.getElementById('startTime').innerText = startTime.toLocaleString();
-    document.getElementById('endTime').innerText = endTime.toLocaleString();
     document.getElementById('timeLeft').innerText = `${days}天 ${hours}小时 ${minutes}分钟 ${seconds}秒`;
-
-    if (timeDifference < 0) {
-        clearInterval(interval);
-        document.getElementById('timeLeft').innerText = '活动已结束';
-    }
 }
 
 updateCountdown();
