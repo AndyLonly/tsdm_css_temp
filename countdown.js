@@ -18,8 +18,8 @@ function updateCountdown() {
         timeLeftMessage = '距离活动结束还有: ';
     } else {
         // 活动已结束
-        //clearInterval(interval);
         document.getElementById('timeLeft').innerText = '活动已结束';
+        clearInterval(interval);
         return;
     }
     const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
