@@ -18,7 +18,7 @@ function updateCountdown() {
         timeLeftMessage = '距离活动结束还有: ';
     } else {
         // 活动已结束
-        clearInterval(interval);
+        //clearInterval(interval);
         document.getElementById('timeLeft').innerText = '活动已结束';
         return;
     }
