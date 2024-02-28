@@ -15,6 +15,7 @@
 }
 
 .R70Mto_container {
+    font-family: 'Helvetica Neue', Times New Roman, Helvetica, Arial, sans-serif;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -23,9 +24,20 @@
     -webkit-backdrop-filter: blur(8px);/* 苹果多少是有点大病 */
 }
 
+.R70Mto_container p{
+    text-indent: 2em !important;
+}
+
 .R70Mto_container:last-child {
-            margin-bottom: 0;
-        }
+    margin-bottom: 0;
+}
+
+.R70Mto_embed {
+    width: 100%; 
+    height: 100%;
+    border: none; 
+    overflow: hidden;
+}
 
 .R70Mto_nav {
     position: fixed;
