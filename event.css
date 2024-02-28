@@ -27,7 +27,7 @@
             margin-bottom: 0;
         }
 
-.floating-nav {
+.R70Mto_nav {
     position: fixed;
     top: 50%; 
     right: 10px;
@@ -39,7 +39,7 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-.floating-nav a {
+.R70Mto_nav a {
     display: block;
     margin: 10px 0;
     color: #007bff;
@@ -47,7 +47,7 @@
 }
 
 @media (orientation: portrait) {
-  .floating-nav {
+  .R70Mto_nav {
     display: none;
   }
 }
