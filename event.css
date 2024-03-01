@@ -58,6 +58,37 @@
     text-decoration: none;
 }
 
+.R70Mto_gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+.R70Mto_gallery img {
+    width: auto;
+    height: auto;
+    margin: 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+.R70Mto_gallery_full {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.R70Mto_gallery_full img {
+    width: 100%;
+    height: 100%;
+}
+
 @media (orientation: portrait) {
   .R70Mto_nav {
     display: none;
