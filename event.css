@@ -22,7 +22,7 @@
     background: rgba(255, 177, 8, 0.3); 
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);/* 苹果多少是有点大病 */
-    min-height: 20%;
+    min-height: 14vh;
 }
 
 .R70Mto_container p{
