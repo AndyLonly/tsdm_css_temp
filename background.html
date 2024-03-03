@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Spheres on Scroll</title>
+<style>
+  body, html {
+    height: 200%;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  .sphere {
+    border-radius: 50%;
+    position: fixed;
+    transition: width 0.5s, height 0.5s, transform 0.5s;
+  }
+</style>
+</head>
+<body>
+
+<script>
+  function createSpheres(numberOfSpheres) {
+    const colors = ['blue', 'yellow', 'orange'];
+    for (let i = 0; i < numberOfSpheres; i++) {
+      const sphere = document.createElement('div');
+      sphere.classList.add('sphere');
+      const colorIndex = Math.floor(Math.random() * colors.length);
+      const size = Math.random() * 50 + 20; // 球体大小在20px到70px之间
+      sphere.style.backgroundColor = colors[colorIndex];
+      sphere.style.width = sphere.style.height = `${size}px`;
+      sphere.style.top = `${Math.random() * window.innerHeight}px`;
+      sphere.style.left = `${Math.random() * window.innerWidth}px`;
+  
+      document.body.appendChild(sphere);
+    }
+  }
+  
+  function adjustSpheresOnScroll() {
+    window.addEventListener('scroll', () => {
+      document.querySelectorAll('.sphere').forEach(sphere => {
+        const newSize = Math.random() * 50 + 20; // 在滚动时随机调整大小
+        sphere.style.width = sphere.style.height = `${newSize}px`;
+  
+        // 随机运动
+        const newX = Math.random() * window.innerWidth;
+        const newY = Math.random() * window.innerHeight;
+        sphere.style.transform = `translate(${newX}px, ${newY}px)`;
+      });
+    });
+  }
+  
+  createSpheres(10); // 创建10个球体
+  adjustSpheresOnScroll();
+</script>
+
+</body>
+</html>
