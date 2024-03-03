@@ -1,58 +1,70 @@
+
+使用纯CSS和HTML实现的视差滚动效果通常是静态的，不会根据用户滚动动态改变大小或进行随机运动。视差滚动效果本质上是通过背景图像在页面滚动时以不同的速度移动，从而创造出深度感的一种视觉效果。尽管这种方法不能直接实现球体大小变化或随机运动，但我们可以利用这一技巧创造一种球体似乎随着滚动而“移动”的错觉。
+
+下面的示例演示了如何使用CSS创建基本的视差滚动背景效果，但请注意，球体的“移动”实际上是由于背景图片的移动造成的视觉效果，而不是球体本身的物理移动或大小变化。
+
+HTML
+html
+Copy code
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Responsive Spheres on Scroll</title>
-<style>
-  body, html {
-    height: 200%;
-    margin: 0;
-    overflow-x: hidden;
-  }
-  .sphere {
-    border-radius: 50%;
-    position: fixed;
-    transition: width 0.5s, height 0.5s, transform 0.5s;
-  }
-</style>
+    <meta charset="UTF-8">
+    <title>Parallax Scrolling Example</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<style>
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
 
-<script>
-  function createSpheres(numberOfSpheres) {
-    const colors = ['blue', 'yellow', 'orange'];
-    for (let i = 0; i < numberOfSpheres; i++) {
-      const sphere = document.createElement('div');
-      sphere.classList.add('sphere');
-      const colorIndex = Math.floor(Math.random() * colors.length);
-      const size = Math.random() * 50 + 20; // 球体大小在20px到70px之间
-      sphere.style.backgroundColor = colors[colorIndex];
-      sphere.style.width = sphere.style.height = `${size}px`;
-      sphere.style.top = `${Math.random() * window.innerHeight}px`;
-      sphere.style.left = `${Math.random() * window.innerWidth}px`;
-  
-      document.body.appendChild(sphere);
-    }
-  }
-  
-  function adjustSpheresOnScroll() {
-    window.addEventListener('scroll', () => {
-      document.querySelectorAll('.sphere').forEach(sphere => {
-        const newSize = Math.random() * 50 + 20; // 在滚动时随机调整大小
-        sphere.style.width = sphere.style.height = `${newSize}px`;
-  
-        // 随机运动
-        const newX = Math.random() * window.innerWidth;
-        const newY = Math.random() * window.innerHeight;
-        sphere.style.transform = `translate(${newX}px, ${newY}px)`;
-      });
-    });
-  }
-  
-  createSpheres(10); // 创建10个球体
-  adjustSpheresOnScroll();
-</script>
+.parallax-container {
+    height: 100vh; /* Full height */
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 1px;
+}
+
+.parallax-background {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* This is the key to the parallax effect */
+    transform: translateZ(-1px) scale(2);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.content {
+    position: relative;
+    z-index: 100;
+    background-color: white;
+    padding: 20px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+</style>
+<div class="parallax-container">
+    <div class="parallax-background" style="background-image: url('your-background-image-url.jpg');"></div>
+</div>
+
+<div class="content">
+    <h1>Welcome to the Parallax Effect Example</h1>
+    <p>Scroll down to see the effect...</p>
+</div>
+
+<div class="parallax-container">
+    <div class="parallax-background" style="background-image: url('your-background-image-url.jpg');"></div>
+</div>
 
 </body>
 </html>
