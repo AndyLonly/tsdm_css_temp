@@ -94,3 +94,18 @@
     display: none;
   }
 }
+
+.R70Mto_bg_parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 720px auto;
+}
+
+#p_bg1 { background-image: url('https://img.ts-dm.net/images/2024/03/04/97283983_p0.png'); }
+#p_bg2 { background-image: url('https://img.ts-dm.net/images/2024/03/04/101043278_p0.png'); }
+#p_bg3 { background-image: url('https://img.ts-dm.net/images/2024/03/04/106088639_p0.png'); }
+#p_bg4 { background-image: url('https://img.ts-dm.net/images/2024/03/04/116593587_p0.png'); }
+#p_bg5 { background-image: url('https://img.ts-dm.net/images/2024/03/04/94737094_p0.jpg'); }
+#p_bg6 { background-image: url('https://img.ts-dm.net/images/2024/03/04/116056256_p0.png'); }
