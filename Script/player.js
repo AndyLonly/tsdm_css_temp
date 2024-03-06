@@ -13,8 +13,8 @@ const ap = new APlayer({
         name: 'beauty is within us',
         artist: 'Scott Matthew',
         url: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBdkRlTE5mSUdIc2dndmh5YmlBUVE4cTUxZDFJNmc_ZT05SDJTOGg.mp3',
-        cover: './Player_cache/beauty is within us.jpg',
-	lrc:'./Player_cache/beauty is within us.lrc'
+        cover: './Player_cache/beauty is within us - Scott Matthew.攻殻機動隊  STAND ALONE COMPLEX O.S.T.+.jpg',
+        lrc:'./Player_cache/beauty is within us - Scott Matthew.攻殻機動隊  STAND ALONE COMPLEX O.S.T.+.lrc'
     },{
         name: 'Gotta knock a little harder',
         artist: '山根麻以',
@@ -25,8 +25,7 @@ const ap = new APlayer({
         name: 'unravel(acoustic version)',
         artist: 'TK from 凛として時雨',
         url: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBdkRlTE5mSUdIc2dndmh3LXIwaUdiS2NoZmhjX3c_ZT02aXVIVG4.mp3',
-        cover: './Player_cache/unravel(acoustic version).jpg',
-        lrc: './Player_cache/unravel.lrc'
+        cover: './Player_cache/unravel(acoustic version).jpg'
     },{
             name: "Quiet's Theme",
             artist: 'Stefanie Joosten',
