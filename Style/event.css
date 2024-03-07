@@ -9,6 +9,15 @@
     transition: all 0.3s ease;
 }
 
+.R70Mto_subtitle {
+    text-align: center;
+    font-size: 18px !important;
+    font-weight: normal;
+    padding: 20px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
 .R70Mto_title:hover {
     color: #007bff;
     transform: translateY(-5px);
@@ -25,6 +34,16 @@
     min-height: 14vh;
 }
 
+.R70Mto_subcontainer {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), /* 主阴影 */
+    0px 6px 20px rgba(0, 0, 0, 0.19); 
+    transition: box-shadow 0.3s ease;
+}
+
+
 .R70Mto_container p{
     text-indent: 2em !important;
 }
@@ -35,7 +54,7 @@
 }
 
 .R70Mto_container li {
-    list-style-type: decimal;
+    list-style-type: decimal !important;
     margin-left: 2em;
 }
 
