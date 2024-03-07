@@ -29,6 +29,16 @@
     text-indent: 2em !important;
 }
 
+.R70Mto_container ul {
+    display: block;
+    margin-left: 14px;
+}
+
+.R70Mto_container li {
+    list-style-type: decimal;
+    margin-left: 2em;
+}
+
 .R70Mto_container img {
     max-width: 100%;
     height: auto;
@@ -113,6 +123,7 @@
     background-position: center;
     background-repeat: repeat;
     background-size: cover;
+    border-radius: 10px;
 }
 
 #p_bg1 { background-image: url('https://img.ts-dm.net/images/2024/03/04/97283983_p0.png'); }
