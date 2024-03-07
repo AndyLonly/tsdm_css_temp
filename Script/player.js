@@ -8,7 +8,8 @@ const ap = new APlayer({
     volume: 0.7,
     mutex: true,
 	loop: 'all',
-	theme: '#ebd0c2',
+    theme: '#ebd0c2',
+    listMaxHeight: 90,
     audio: [{
         name: 'beauty is within us',
         artist: 'Scott Matthew',
