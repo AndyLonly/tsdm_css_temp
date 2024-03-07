@@ -28,16 +28,16 @@ const ap = new APlayer({
         url: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBdkRlTE5mSUdIc2dndmh3LXIwaUdiS2NoZmhjX3c_ZT02aXVIVG4.mp3',
         cover: './Player_cache/unravel(acoustic version).jpg'
     },{
-            name: "Quiet's Theme",
-            artist: 'Stefanie Joosten',
-            url: "https://webcache.blackcode.app/Quiet's%20Theme%20-%20Stefanie%20Joosten_01.mp3",
-            cover: "./Player_cache/Quiet's Theme.jpg",
-            lrc: "./Player_cache/Quiet's Theme.lrc"
+        name: "Quiet's Theme",
+        artist: 'Stefanie Joosten',
+        url: "https://webcache.blackcode.app/Quiet's%20Theme%20-%20Stefanie%20Joosten_01.mp3",
+        cover: "./Player_cache/Quiet's Theme.jpg",
+        lrc: "./Player_cache/Quiet's Theme.lrc"
     },{
-            name: 'Speed of Light',
-            artist: '塞壬唱片-MSR',
-            url: 'https://webcache.blackcode.app/Speed%20of%20Light%20-%20%E5%A1%9E%E5%A3%AC%E5%94%B1%E7%89%87-MSR%2CDJ%20Okawari%2C%E4%BA%8C%E5%AE%AE%E6%84%9B_01.mp3',
-            cover: './Player_cache/Speed of Light.jpg',
-            lrc: './Player_cache/Speed of Light.lrc'
+        name: 'Speed of Light',
+        artist: '塞壬唱片-MSR',
+        url: 'https://webcache.blackcode.app/Speed%20of%20Light%20-%20%E5%A1%9E%E5%A3%AC%E5%94%B1%E7%89%87-MSR%2CDJ%20Okawari%2C%E4%BA%8C%E5%AE%AE%E6%84%9B_01.mp3',
+        cover: './Player_cache/Speed of Light.jpg',
+        lrc: './Player_cache/Speed of Light.lrc'
     }]
 });
