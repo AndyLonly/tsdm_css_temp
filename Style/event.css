@@ -45,6 +45,13 @@
     overflow: hidden;
 }
 
+.R70Mto_embplayer {
+    width: 100%;
+    height: 190px;
+    border: none;
+    overflow: hidden;
+}
+
 .R70Mto_nav {
     position: fixed;
     top: 50%; 
