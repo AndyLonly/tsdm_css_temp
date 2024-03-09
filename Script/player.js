@@ -4,7 +4,7 @@ const ap = new APlayer({
 	autoplay: false,
 	lrcType: 3,
     order: 'random',
-	preload: 'auto',
+    preload: 'metadata',
     volume: 0.7,
     mutex: true,
 	loop: 'all',
