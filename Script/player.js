@@ -31,7 +31,7 @@ const ap = new APlayer({
         name: "Quiet's Theme",
         artist: 'Stefanie Joosten',
         url: "https://webcache.blackcode.app/Quiet's%20Theme%20-%20Stefanie%20Joosten_01.mp3",
-        cover: "https://web.blackcode.app/Player_cache/Quiet's%20Theme.jpg",
+        cover: "./Player_cache/Quiet's%20Theme.jpg",
         lrc: "./Player_cache/Quiet's Theme.lrc"
     },{
         name: 'Speed of Light',
