@@ -1,6 +1,11 @@
+function getQueryParameterValue(parameterName, defaultValue) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.has(parameterName) ? new Date(urlParams.get(parameterName)) : new Date(defaultValue);
+}
+
 function updateCountdown() {
-    const startTime = new Date('2024-04-01T00:00:00+0800');
-    const endTime = new Date('2024-05-01T00:00:00+08:00');
+    const startTime = getQueryParameterValue('startTime', '2024-04-01T00:00:00+0800');
+    const endTime = getQueryParameterValue('endTime', '2024-05-01T00:00:00+08:00');
     const currentTime = new Date();
     let timeDifference;
     let timeLeftMessage;
