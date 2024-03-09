@@ -39,5 +39,16 @@ const ap = new APlayer({
         url: 'https://webcache.blackcode.app/Speed%20of%20Light%20-%20%E5%A1%9E%E5%A3%AC%E5%94%B1%E7%89%87-MSR%2CDJ%20Okawari%2C%E4%BA%8C%E5%AE%AE%E6%84%9B_01.mp3',
         cover: './Player_cache/Speed of Light.jpg',
         lrc: './Player_cache/Speed of Light.lrc'
+    },{
+        name: 'On My Own',
+        artist: '岩崎太整',
+        url: 'https://webcache.blackcode.app/OnMyOwn.mp3',
+        cover: './Player_cache/on my own.jpg'
+    },{
+        name: '白い雪',
+        artist: 'KOKIA',
+        url: 'https://webcache.blackcode.app/%E7%99%BD%E3%81%84%E9%9B%AA.mp3',
+        cover: './Player_cache/白い雪.jpg',
+        lrc: './Player_cache/白い雪.lrc'
     }]
 });
