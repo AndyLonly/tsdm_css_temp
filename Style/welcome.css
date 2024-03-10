@@ -76,10 +76,10 @@
     cursor: url("https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBdkRlTE5mSUdIc2dndllteTN1aHp3SUJwQk1LUkE_ZT1KeFFlcko.png"), auto;
 }
 
-/*@supports not (writing-mode: vertical-rl) {
+@supports not (writing-mode: vertical-rl) {
 .R70Mto_welcometitle {
     display: none;
-}*/
+}
 
 .R70Mto_welcome_notsupported {
         display: block;
