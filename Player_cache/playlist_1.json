@@ -24,7 +24,8 @@
     "name": "unravel(acoustic version)",
     "artist": "TK from 凛として時雨",
     "url": "https://webcache.blackcode.app/unravel(acoustic%20version).flac",
-    "cover": "./Player_cache/unravel(acoustic version).jpg"
+    "cover": "./Player_cache/unravel(acoustic version).jpg",
+    "lrc": "./Player_cache/unravel (acoustic version).lrc"
   },
   {
     "name": "Quiet's Theme",
@@ -44,7 +45,8 @@
     "name": "On My Own",
     "artist": "岩崎太整",
     "url": "https://webcache.blackcode.app/OnMyOwn.mp3",
-    "cover": "./Player_cache/on my own.jpg"
+    "cover": "./Player_cache/on my own.jpg",
+    "lrc": "./Player_cache/On My Own.lrc"
   },
   {
     "name": "白い雪",
@@ -52,5 +54,33 @@
     "url": "https://webcache.blackcode.app/%E7%99%BD%E3%81%84%E9%9B%AA.mp3",
     "cover": "./Player_cache/白い雪.jpg",
     "lrc": "./Player_cache/白い雪.lrc"
+  },
+  {
+    "name": "Blühende Nacht (2014 Rework)",
+    "artist": "Blühende Nacht (2014 Rework)",
+    "url": "https://webcache.blackcode.app/Bl%C3%BChende%20Nacht%20(2014%20Rework).mp3",
+    "cover": "./Player_cache/Blühende Nacht (2014 Rework).jpg",
+    "lrc": "./Player_cache/Blühende Nacht (2014 Rework).lrc"
+  },
+  {
+    "name": "Dreamy Noise (feat. YUUKANADE)",
+    "artist": "ゆうかなで",
+    "url": "https://webcache.blackcode.app/Dreamy%20Noise.mp3",
+    "cover": "./Player_cache/Dreamy Noise.jpg",
+    "lrc": "./Player_cache/Dreamy Noise.lrc"
+  },
+  {
+    "name": "melt in the sky",
+    "artist": "綾倉盟",
+    "url": "https://webcache.blackcode.app/melt%20in%20the%20sky.mp3",
+    "cover": "./Player_cache/melt in the sky.jpg",
+    "lrc": "./Player_cache/melt in the sky.lrc"
+  },
+  {
+    "name": "Libertus",
+    "artist": "Chen-U",
+    "url": "https://webcache.blackcode.app/Libertus.mp3",
+    "cover": "./Player_cache/Libertus.jpg",
+    "lrc": "./Player_cache/Libertus.lrc"
   }
 ]
