@@ -1,5 +1,12 @@
 [
   {
+    "name": "みずいろの雨",
+    "artist": "八神纯子",
+    "url": "https://webcache.blackcode.app/%E3%81%BF%E3%81%9A%E3%81%84%E3%82%8D%E3%81%AE%E9%9B%A8.mp3",
+    "cover": "./Player_cache/みずいろの雨.jpg",
+    "lrc": "./Player_cache/みずいろの雨.lrc"
+  },
+  {
     "name": "beauty is within us",
     "artist": "Scott Matthew",
     "url": "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBdkRlTE5mSUdIc2dndmh5YmlBUVE4cTUxZDFJNmc_ZT05SDJTOGg.mp3",
