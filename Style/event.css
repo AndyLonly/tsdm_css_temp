@@ -9,6 +9,16 @@
     transition: all 0.3s ease;
 }
 
+.R70Mto_link a {
+    color: #007bff; 
+    text-decoration: none;
+}
+
+.R70Mto_link a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
 .R70Mto_subtitle {
     text-align: center;
     font-size: 18px !important;
@@ -236,11 +246,11 @@
         box-shadow: 0 6px 20px rgba(0,0,0,0.6);
     }
 
-    .R70Mto_container a {
+    .R70Mto_link a {
         color: #7aa2ff; 
     }
 
-    .R70Mto_container a:hover {
+    .R70Mto_link a:hover {
         color: #a8c5ff; 
     }
 
