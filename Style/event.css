@@ -247,11 +247,11 @@
     }
 
     .R70Mto_link a {
-        color: #7aa2ff; 
+        color: #5dffb5 !important;
     }
 
     .R70Mto_link a:hover {
-        color: #a8c5ff; 
+        color: #00c169 !important;
     }
 
     .R70Mto_container li {
