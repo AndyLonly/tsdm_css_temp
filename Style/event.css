@@ -211,9 +211,6 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    body {
-        color: #e6ecf5;
-    }
 
     .R70Mto_title {
         color: #e6ecf5;
@@ -239,7 +236,14 @@
         box-shadow: 0 6px 20px rgba(0,0,0,0.6);
     }
 
-    .R70Mto_container p,
+    .R70Mto_container a {
+        color: #7aa2ff; 
+    }
+
+    .R70Mto_container a:hover {
+        color: #a8c5ff; 
+    }
+
     .R70Mto_container li {
         color: #d1d5db;
     }
