@@ -9,15 +9,10 @@
     transition: all 0.3s ease;
 }
 
-.R70Mto_link a {
-    color: #007bff !important;
+.R70Mto_link {
+    color: #007bff;
     text-decoration: none;
 }
-
-.R70Mto_link a:hover {
-        color: #0056b3 !important;
-        text-decoration: underline;
-    }
 
 .R70Mto_subtitle {
     text-align: center;
@@ -246,12 +241,8 @@
         box-shadow: 0 6px 20px rgba(0,0,0,0.6);
     }
 
-    .R70Mto_link a {
-        color: #5dffb5 !important;
-    }
-
-    .R70Mto_link a:hover {
-        color: #00c169 !important;
+    .R70Mto_link {
+        color: #5dffb5;
     }
 
     .R70Mto_container li {
